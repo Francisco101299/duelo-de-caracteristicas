@@ -1,8 +1,8 @@
 // ============================================================================
 // src/lib/LanguageContext.jsx
-// Contexto global de idioma: guarda cuál está activo (es/en), lo persiste
-// en localStorage, e intenta detectar el idioma del navegador la primera
-// vez que alguien visita (si su navegador está en inglés, arranca en inglés).
+// Contexto global de idioma: guarda cuál está activo (es/en) y lo persiste
+// en localStorage. El idioma por defecto es español (sin autodetección del
+// navegador, ver detectInitialLanguage).
 //
 // Además, refleja el idioma activo en la URL como ?lang=en (se omite el
 // parámetro cuando el idioma es el default, es). Esto es necesario para que
@@ -31,10 +31,11 @@ function detectInitialLanguage() {
     const saved = localStorage.getItem("preferredLanguage");
     if (saved && LANGUAGES.find((l) => l.code === saved)) return saved;
   } catch {}
-  if (typeof navigator !== "undefined" && navigator.language) {
-    const browserLang = navigator.language.slice(0, 2).toLowerCase();
-    if (LANGUAGES.find((l) => l.code === browserLang)) return browserLang;
-  }
+  // Ya NO se detecta el idioma del navegador: Googlebot navega con en-US, así
+  // que antes veía (y declaraba canonical de) la versión en inglés ?lang=en de
+  // todo el sitio, contradiciendo el sitemap y el HTML estático en español.
+  // El inglés queda como opción explícita (selector de idioma, ?lang=en o lo
+  // ya guardado en localStorage); el idioma por defecto es siempre español.
   return DEFAULT_LANGUAGE;
 }
 
