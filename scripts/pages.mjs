@@ -19,6 +19,7 @@ export const COMPARISON_TYPES = ["Celular", "Laptop", "Tablet", "Smartwatch"];
 export const TOP_N = 8;
 
 export const STATIC_PATHS = [
+  "/recomendador",
   "/blog",
   "/acerca-de",
   "/preguntas-frecuentes",
