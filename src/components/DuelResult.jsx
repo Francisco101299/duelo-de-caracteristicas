@@ -312,7 +312,7 @@ export default function DuelResult({ devA: rawDevA, devB: rawDevB, onReset, rese
       </div>
 
       <div className="mt-4">
-        <ShareButtons devA={devA} devB={devB} />
+        <ShareButtons devA={devA} devB={devB} cats={cats} overallA={overallA} overallB={overallB} />
       </div>
 
       {anyEstimate && (
