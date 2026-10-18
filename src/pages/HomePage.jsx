@@ -20,7 +20,7 @@ export default function HomePage() {
   const [devB, setDevB] = useState(null);
   const [category, setCategory] = useState(null);
   const navigate = useNavigate();
-  const { t } = useLanguage();
+  const { t, lang } = useLanguage();
 
   const canCompare = devA && devB && devA.id !== devB.id;
   const meta = homeMeta();
@@ -95,6 +95,15 @@ export default function HomePage() {
         <p className="text-center text-xs mt-3" style={{ color: COLORS.muted, fontFamily: "'Inter', sans-serif" }}>
           {t("home.database", { count: DEVICES.length })}
         </p>
+        <div className="text-center mt-4">
+          <Link
+            to="/recomendador"
+            className="inline-block px-5 py-2.5 rounded-full text-sm font-semibold"
+            style={{ backgroundColor: COLORS.a, color: "#fff", fontFamily: "'Space Grotesk', sans-serif" }}
+          >
+            {lang === "en" ? "Not sure what to compare? Get a recommendation" : "¿No sabes qué comparar? Te recomendamos uno"}
+          </Link>
+        </div>
       </div>
 
       <div className="max-w-3xl mx-auto px-5 sm:px-10 py-10">
