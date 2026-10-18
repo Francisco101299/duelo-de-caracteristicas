@@ -158,6 +158,24 @@ links: [
       { label: "Explorar el catálogo de drones", path: "/drones" },
     ]
   },
+  {
+    id: "tesla-roadster-2026-lo-que-sabemos",
+    title: "Tesla Roadster 2026: lo que sabemos del nuevo deportivo de Tesla",
+    excerpt: "Tesla presentó el 15 de octubre de 2026 su nuevo Roadster, con una demostración que dio la vuelta al mundo. Resumimos qué se sabe, qué cuesta reservarlo y qué todavía no está claro.",
+    date: "2026-10-17",
+    content: [
+      "El 15 de octubre de 2026, Tesla presentó en un evento transmitido en vivo desde Texas la nueva generación del Roadster, su deportivo eléctrico. Es el proyecto que Elon Musk anunció en 2017 con promesa de entrega en 2020, así que la presentación llegó después de casi una década de retrasos.",
+      "Lo que más llamó la atención fue la demostración: el Roadster subió por una rampa empinada y curva, salió disparado al final y aterrizó sobre sus ruedas. Tesla explicó que el auto usa depósitos de aire a muy alta presión y propulsores, tecnología desarrollada junto con SpaceX. Por eso muchos medios lo llamaron el «auto volador». Conviene leerlo con cuidado: lo que se vio fue un salto controlado y espectacular, no un auto que circule por el aire como un dron.",
+      "Según la información publicada por Tesla y recogida por varios medios, habrá tres versiones: Performance, Thrust y Rocket. Para la versión más potente se habla de una velocidad máxima de alrededor de 370 km/h y de una autonomía de más de 482 km. También se mencionó un sistema de succión con ventiladores en la parte inferior, capaz de generar hasta 2G de fuerza para pegar el auto al piso. Son cifras de la propia marca, todavía sin pruebas independientes.",
+      "Las reservas ya están abiertas. Los anticipos que se han publicado son de 50.000 dólares para la versión Performance y de 250.000 dólares para la Thrust. Según medios que cubrieron el evento, la versión capaz de «volar» se venderá solamente por invitación. Tesla no reveló los precios finales; hace casi diez años se habló de un precio base de unos 200.000 dólares, pero esa cifra no está confirmada para este modelo.",
+      "La producción está prevista para 2028, y los plazos de Tesla para este auto ya han cambiado muchas veces, así que esa fecha es una intención y no una garantía. Tampoco se ha confirmado en qué países se entregará ni en qué condiciones, algo que importa si piensas comprar fuera de Estados Unidos.",
+      "En bolsa, las acciones de Tesla subieron cerca de un 5% antes de la apertura del viernes 16 de octubre, aunque algunos analistas se mostraron prudentes: el Roadster es un auto de nicho y de muy bajo volumen, y el negocio de Tesla depende sobre todo de sus modelos de mayor venta.",
+      "En resumen: el nuevo Tesla Roadster es impresionante como demostración tecnológica, pero todavía es un proyecto con precio final, fecha real de entrega y especificaciones por confirmar. Si te interesa la tecnología de vuelo y maniobra, en nuestro comparador puedes revisar los drones más vendidos y ver cuál rinde mejor según lo que busques."
+    ],
+    links: [
+      { label: "Explorar el catálogo de drones", path: "/drones" },
+    ]
+  },
 ];
 
 export function getArticleById(id) {
