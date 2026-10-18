@@ -89,6 +89,12 @@ function rivalsOf(device) {
 // Contenido por tipo de página: { title, description, canonical, ogType, jsonLd, body }
 // ---------------------------------------------------------------------------
 const STATIC_META = {
+  "/recomendador": {
+    title: "¿Cuál me conviene? Recomendador de celulares, laptops y más",
+    description:
+      "Responde tres preguntas (categoría, presupuesto y qué te importa más) y te recomendamos los 3 mejores dispositivos del catálogo según tus prioridades.",
+    h1: "¿Cuál me conviene?",
+  },
   "/blog": { title: t("blog.seoTitle"), description: t("blog.seoDescription"), h1: "Blog", sub: t("blog.subtitle") },
   "/acerca-de": { title: t("about.seoTitle"), description: t("about.seoDescription"), h1: t("about.seoTitle") },
   "/preguntas-frecuentes": { title: t("nav.faq"), description: t("faq.seoDescription"), h1: t("nav.faq") },
