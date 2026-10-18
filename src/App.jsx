@@ -21,6 +21,7 @@ const FaqPage = lazy(() => import("./pages/FaqPage"));
 const PrivacyPage = lazy(() => import("./pages/PrivacyPage"));
 const CookiesPage = lazy(() => import("./pages/CookiesPage"));
 const ContactPage = lazy(() => import("./pages/ContactPage"));
+const RecommenderPage = lazy(() => import("./pages/RecommenderPage"));
 function PageFallback() {
   return <div style={{ minHeight: "100vh", backgroundColor: "#EDEFF3" }} aria-hidden="true" />;
 }
@@ -34,6 +35,7 @@ export default function App() {
       <Suspense fallback={<PageFallback />}>
         <Routes>
           <Route path="/" element={<HomePage />} />
+          <Route path="/recomendador" element={<RecommenderPage />} />
           <Route path="/:slugType" element={<CategoryPage />} />
           <Route path="/:slugType/:slug" element={<DevicePage />} />
           <Route path="/comparar/:pair" element={<ComparisonPage />} />
