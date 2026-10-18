@@ -64,7 +64,7 @@ function Dropdown({ label, items }) {
 }
 
 export default function CategoryNav() {
-  const { t } = useLanguage();
+  const { t, lang } = useLanguage();
 
   const categories = [
     { label: t("nav.phones"), path: "/celulares" },
@@ -77,6 +77,7 @@ export default function CategoryNav() {
   const toolLinks = TOOL_SLUGS_LIST.map((s) => ({ label: t(s.labelKey), path: `/${s.slug}` }));
 
   const moreLinks = [
+    { label: lang === "en" ? "Which one fits me?" : "¿Cuál me conviene?", path: "/recomendador" },
     { label: t("nav.suggest"), path: "/sugerir" },
     { label: t("nav.blog"), path: "/blog" },
     { label: t("nav.faq"), path: "/preguntas-frecuentes" },
